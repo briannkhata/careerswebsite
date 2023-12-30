@@ -1,4 +1,4 @@
-h1 {
+/*h1 {
   font-size: 40px;
   font-family: "Roboto";
   font-weight: normal;
@@ -17,14 +17,13 @@ p {
   font-family: "Roboto";
   color: rgb(80, 80, 80);
 }
-
+#container {
+  max-width: 720px;
+  margin: 0 auto 0 auto;
+}
+*/
 #banner {
   width: 100%;
   height: 360px;
   object-fit: cover;
-}
-
-#container {
-  max-width: 720px;
-  margin: 0 auto 0 auto;
 }
