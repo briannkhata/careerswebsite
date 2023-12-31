@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Careers Hub</title>
+    <title>Job Hub</title>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,14 +21,14 @@
     <link rel="stylesheet" href="static/css/main.css" />
   </head>
   <body>
+    {% include 'nav.html' %}
+    <img
+      id="banner"
+      class="img-fluid"
+      src="static/images/banner.jpg"
+      height="350"
+    />
     <div class="container">
-      <h1 class="text-center">Careers Hub</h1>
-      <img
-        id="banner"
-        class="img-fluid"
-        src="static/images/banner.jpg"
-        height="350"
-      />
       <h2 class="text-center mt-4 mb-4">About Careers Hub</h2>
       <p class="lead">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
@@ -45,10 +45,14 @@
         dolorem! Officiis iure rerum voluptates a cumque velit quibusdam sed
         amet tempora. Sit laborum ab, eius fugit doloribus tenetur fugiat,
       </p>
-      <h2 class="text-center mt-2 mb-4">Open Positions</h2>
+      <h2 class="text-center mt-2 mb-4">Job Openings</h2>
       <div>{% for job in jobs %} {% include 'jobitem.html' %} {% endfor %}</div>
-      <div class="text-center">
-        <button class="btn btn-primary btn-lg">Contact Us</button>
+      <div class="text-center mt-4">
+        <a
+          href="mailto:info@jobhub.com?subject=Question%20about%20Job%20Opennings&body=My%20name%20%3A%20%3Cyour%20name%20here%3E%0D%0A%0D%0AMy%20Questions%20%3A%20%3Center%20your%20question%20here%3E%0D%0A"
+          class="btn btn-primary btn-lg"
+          >Contact Us</a
+        >
         <p class="mt-4">Copyright 2023, Job Hub</p>
       </div>
     </div>
